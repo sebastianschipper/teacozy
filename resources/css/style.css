@@ -7,7 +7,7 @@ body, a {
   opacity: 0.9;
   text-align: center;
 }
-h2, h3. h4 {
+h2, h3, h4 {
   margin: 0;
   padding: 10px;
 }
@@ -16,17 +16,21 @@ h2, h3. h4 {
   justify-content: center;
   flex-wrap: wrap;
 }
+.content {
+  margin: auto;
+  width: 1200px;
+}
 
 /* Header Styles */
 .header {
   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   height: 69px;
   width: 100%;
   border-bottom: 1px solid seashell;
   align-items: center;
-  top: 0;
-  right: 0;
-  left: 0;
   background-color: black;
   z-index: 1;
 }
@@ -67,7 +71,7 @@ nav {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 70px;
+  padding: 60px 0px;
 }
 .totm_items {
   flex-direction: row;
@@ -79,26 +83,34 @@ nav {
 }
 .item img {
   height: 200px;
+  width: 300px;
   margin: 10px;
 }
 .item span {
   font-weight: bold;
 }
 
-/* Tea of the Month Styles */
+/* Location Styles */
 .location_wrapper {
-  margin-top: 70px;
-  height: 500px;
-}
-.all_locations {
   background-image: url(../../resources/images/img-locations-background.jpg);
-  margin: auto:auto;
-  width: 1200px;
+  padding-top: 60px;
+  height: 500px;
 }
 .location {
   flex-direction: column;
+  justify-content: center;
   background-color: black;
   width: 300px;
   margin: 5px 20px;
   padding: 10px;
+  opacity: 1;
+}
+
+/* Footer Styles */
+.footer {
+  height: 200px;
+}
+.subfooter {
+  text-align: left;
+  padding-left: 20px;
 }
